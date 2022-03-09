@@ -1,0 +1,6 @@
+#!/bin/bash
+
+workdir=$(cd -P -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)
+echo "Setting working dir: ${workdir}"
+
+$HOME/.local/bin/balena-cli/balena "$@"
